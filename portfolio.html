@@ -5,8 +5,8 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-       <center> <a href="index.html" class="button">Home</a>
+    <body style="background-color:lightgreen;">
+        <center> <a href="index.html" class="button">Home</a>
             <a href="portfolio.html" class="button">Portfolio</a>
             <a href="about_me.html" class="button">About me!</a>
              <a href="career.html" class="button">Career Page</a>
@@ -14,30 +14,27 @@
         <br>
         <a target="_blank" href="https://www.britannica.com/topic/dragon-mythological-creature"><br>
             <img src="images/houhi4.jpg" height="300"><br>This is midori he is my pet dragon say hi he wont bite(probably)
-            <body style="background-color:lightgreen;"></a>
-
+            
         
-    </center></body>
-    </body>
-</html>
-<html>
+        </a>
 
-    <body>
-        <center> 
 
-            <a href="javascript:switchTab('tb_1', 'content_1');" id="tb_1" class="tabmenu active"><button>scratch project</button></a>
-            <a href="javascript:switchTab('tb_2', 'content_2');" id="tb_2" class="tabmenu"><button>.</button></a>
+        <a href="javascript:switchTab('tb_1', 'content_1');" id="tb_1" class="tabmenu active"><button>scratch project</button></a>
+        <a href="javascript:switchTab('tb_2', 'content_2');" id="tb_2" class="tabmenu"><button>my YT channel</button></a>
             
         </center>
 
         <div id="content_1" class="tabcontent"> 
-        <p>Dino scratch project</p>
-        <iframe src="https://jamesbmadden.github.io/scratch-silicon/#294922048" width="1800px" height="600px" frameborder="0" scrolling="no"></iframe>
+            <p>Dino scratch project</p>
+            <iframe src="https://jamesbmadden.github.io/scratch-silicon/#294922048" width="1800px" height="600px" frameborder="0" scrolling="no"></iframe>
         </div> 
-    <div id="content_2" class="tabcontent" style="display:none;">
-    <p>Absolutely nothing</p>
-    <button>Download Resume</button>
-    </div>
+    
+        <div id="content_2" class="tabcontent" style="display:none;">
+            <p>subscribe to my channel</p>
+            <button>watch my videos</button>
+             <iframe src="https://www.youtube.com/channel/UC8An8AnQ3DDQCkd9ljYjysQ/featured" width="1800px" height="600px" frameborder="0" scrolling="no"></iframe>
+        </div>
+    
     </body>
 
 <script>
@@ -46,7 +43,7 @@ function switchTab(tab_id, tab_content) {
 var x = document.getElementsByClassName("tabcontent");
 var i;
 for (i = 0; i < x.length; i++) {
-global.style.display = ''; // hide all tab content
+x[i].style.display = 'none'; // hide all tab content
 }
 document.getElementById(tab_content).style.display = 'block'; // display the content of the tab we need
 
@@ -59,6 +56,5 @@ x[i].className = 'tabmenu';
 document.getElementById(tab_id).className = 'tm_active';
 }
 </script>
-
 
 </html>
