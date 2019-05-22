@@ -46,7 +46,7 @@ function switchTab(tab_id, tab_content) {
 var x = document.getElementsByClassName("tabcontent");
 var i;
 for (i = 0; i < x.length; i++) {
-style.display = ''; // hide all tab content
+global.style.display = ''; // hide all tab content
 }
 document.getElementById(tab_content).style.display = 'block'; // display the content of the tab we need
 
